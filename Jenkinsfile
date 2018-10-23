@@ -5,13 +5,13 @@ node {
     checkout scm
 
   stage 'Setup'
-    sh 'npm install'
+    sh 'sudo npm install'
 
   stage 'Mocha test'
-    sh 'npm test'
+    sh 'sudo npm test'
 
   stage 'Cleanup'
     echo 'Prune and cleanup'
-    sh 'npm prune'
-    sh 'rm node_modules -rf'
+    sh 'sudo npm prune'
+    sh 'sudo rm node_modules -rf'
 }
