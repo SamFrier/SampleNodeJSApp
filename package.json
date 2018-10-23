@@ -1,0 +1,24 @@
+{
+  "name": "SampleNodeJSApp",
+  "version": "1.0.0",
+  "description": "Sample app for testing Jenkins builds",
+  "main": "helloworld.js",
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamFrier/SampleNodeJSApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamFrier/SampleNodeJSApp/issues"
+  },
+  "homepage": "https://github.com/SamFrier/SampleNodeJSApp#readme",
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "zombie": "^6.1.3"
+  }
+}
