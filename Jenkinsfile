@@ -1,17 +1,21 @@
 #!groovy
 
 node {
-  stage 'Checkout'
+  stage('Checkout') {
     checkout scm
+  }
 
-  stage 'Setup'
+  stage('Setup') {
     sh 'sudo npm install'
+  }
 
-  stage 'Mocha test'
+  stage ('Mocha test') {
     sh 'sudo npm test'
+  }
 
-  stage 'Cleanup'
+  stage ('Cleanup') {
     echo 'Prune and cleanup'
     sh 'sudo npm prune'
     sh 'sudo rm node_modules -rf'
+  }
 }
